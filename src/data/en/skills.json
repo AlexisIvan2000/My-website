@@ -25,6 +25,10 @@
       "skills": ["Git", "Docker", "Render", "Cloudflare R2", "OAuth2.0", "JWT", "Boto3", "Supabase", "Firebase", "Postman"]
     },
     {
+      "name": "Testing",
+      "skills": ["Unit Testing", "E2E Testing", "Widget Testing", "Golden Tests"]
+    },
+    {
       "name": "Project Management",
       "skills": ["Jira", "Kanban", "Agile Methodology"]
     }
