@@ -29,16 +29,17 @@ export default function Project() {
                 <img src={project.image} alt={project.title} />
               </div>
               <div className="project-body">
-                <h4 className="project-title">
-                  {project.title}
-                  <svg className="project-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-                </h4>
+                <h4 className="project-title">{project.title}</h4>
                 <p className="project-desc">{project.description}</p>
                 <div className="project-techs">
                   {project.technologies.map((t) => (
                     <span key={t} className="chip">{t}</span>
                   ))}
                 </div>
+                <span className="project-cta">
+                  {project.action}
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                </span>
               </div>
             </a>
           </AnimatedSection>

@@ -5,28 +5,32 @@
             "description": "An intelligent IT career assistant mobile app available on Play Store.",
             "image": "assets/images/joblyx-presentation.png",
             "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
-            "technologies": ["Flutter", "FastAPI", "PostgreSQL", "Cloudflare R2", "NLP", "OpenAI", "JWT", "OAuth2.0","Render", "Linkdin API", "Boto3"]
+            "technologies": ["Flutter", "FastAPI", "PostgreSQL", "Cloudflare R2", "NLP", "OpenAI", "JWT", "OAuth2.0","Render", "Linkdin API", "Boto3"],
+            "action": "View app on Play Store"
         },
         {
             "title": "Joblyx website",
             "description": "Landing page for the Joblyx application.",
             "image": "assets/images/joblyx-website.png",
             "link": "https://joblyx.com",
-            "technologies": ["React.js"]
+            "technologies": ["React.js"],
+            "action": "View website"
         },
         {
             "title": "Commitclarify",
             "description": "A web application that analyzes the security, consistency, and quality of your code on GitHub.",
             "image": "assets/images/commitclarify-presentation.png",
             "link": "https://commitclarify.vercel.app",
-            "technologies": ["React.js", "FastAPI", "PostgreSQL", "RAG", "ChromaDB", "LangChain", "HuggingFace", "OAuth2.0", "OpenAI", "GitHub API"]
+            "technologies": ["React.js", "FastAPI", "PostgreSQL", "RAG", "ChromaDB", "LangChain", "HuggingFace", "OAuth2.0", "OpenAI", "GitHub API"],
+            "action": "View web app"
         },
         {
             "title": "MyspotR",
             "description": "A web application that analyzes your Spotify listening habits to determine your musical mood and provide personalized insights.",
             "image": "assets/images/MyspotR-logo.png",
             "link": "https://github.com/AlexisIvan2000/MyspotR",
-            "technologies": ["React.js", "Flask", "SQLite", "Spotify API", "OAuth2.0"]
+            "technologies": ["React.js", "Flask", "SQLite", "Spotify API", "OAuth2.0"],
+            "action": "View source code on GitHub"
         }
     ]
 }

@@ -32,12 +32,14 @@
   },
   "projects": {
     "label": "Portfolio",
-    "title": "Mes projets"
+    "title": "Mes projets",
+    "cta": "Voir le projet"
   },
   "contact": {
     "label": "Contact",
     "title": "Travaillons ensemble",
-    "text": "Ouvert à de nouvelles opportunités, collaborations ou simplement pour échanger"
+    "text": "Ouvert à de nouvelles opportunités, collaborations ou simplement pour échanger.",
+    "email_label": "Envoyer un email"
   },
   "footer": "Tous droits réservés."
 }

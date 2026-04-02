@@ -757,19 +757,6 @@ section {
   font-weight: 700;
   color: var(--text-bright);
   margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.project-arrow {
-  color: var(--text-muted);
-  transition: color 0.25s, transform 0.25s;
-}
-
-.project-card:hover .project-arrow {
-  color: var(--green);
-  transform: translate(3px, -3px);
 }
 
 .project-desc {
@@ -783,6 +770,26 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-bottom: 20px;
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--green);
+  transition: gap 0.25s;
+}
+
+.project-cta svg {
+  transition: transform 0.25s;
+}
+
+.project-card:hover .project-cta svg {
+  transform: translate(3px, -3px);
 }
 
 /* ================================================
@@ -798,7 +805,7 @@ section {
   font-size: 17px;
   color: var(--text);
   max-width: 480px;
-  margin: 0 auto 40px;
+  margin: 0 auto 32px;
   line-height: 1.7;
 }
 
