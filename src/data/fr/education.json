@@ -1,0 +1,18 @@
+{
+    "education": [
+        {
+            "school": "Collège Communautaire du Nouveau-Brunswick",
+            "degree": "Diplôme d'études collégiales",
+            "subject": "Programmation et applications mobiles",
+            "duration": "09/2022 - 06/2025",
+            "location": "Bathurst, NB"
+        },
+        {
+            "school": "EST LaSalle",
+            "degree": "Brevet technique supérieur",
+            "subject": "Informatique industriel et automatisme",
+            "duration": "09/2019 - 09/2021",
+            "location": "Douala, Littoral"
+        }
+    ]
+}

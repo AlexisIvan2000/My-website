@@ -1,0 +1,42 @@
+{
+    "experiences": [
+        {
+            "company": "Innovations et Solutions Technologiques Inc",
+            "position": "Développeur Full Stack stagiaire",
+            "duration": "03/2025 -  06/2025",
+            "location": "Montréal, QC",
+            "description": [
+                "Développement full stack d'applications web.",
+                "Mise en place des tests unitaires et documentation complète.",
+                "Participation à la revue de code, optimisation des performances et amélioration de l'ergonomie.",
+                "Collaboration en équipe sur divers projets logiciels, en utilisant des méthodologies agiles pour assurer une livraison efficace et de qualité."
+            ],
+            "technologies": ["Angular", "Node.js", "MS SQL Server", "React", "Express.js", "FastAPI", "Flask", "MongoDB", "Jira", "Kanban"]
+        },
+        {
+            "company": "SGMC-filiale du groupe CASTEL",
+            "position": "Technicien en Informatique",
+            "duration": "05/2020 - 05/2021",
+            "location": "Douala, Littoral",
+            "description": [
+                "Support au développement et à la maintenance des systèmes informatiques de l'entreprise.",
+                "Diagnostic, analyse et résolution des anomalies techniques",
+                "Automatisation des processus internes pour améliorer la fiabilité et la performance",
+                "Collaboration en équipe pluridisciplinaire sur divers projets"
+            ],
+            "technologies": ["C#", "Python", "C++"]
+        },
+        {
+            "company": "COCIC SARL",
+            "position": "Stagiaire au service informatique",
+            "duration": "12/2019 - 03/2020",
+            "location": "Douala, Littoral",
+            "description": [
+                "Analyse et visulation des données",
+                "Développement de scripts Python pour automatiser les tâches internes",
+                "Participation à la maintenance et à l'évolution des outils logiciels"
+            ],
+            "technologies": ["Excel", "Python", "Google Sheets"]
+        }
+    ]
+}

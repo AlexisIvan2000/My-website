@@ -1,0 +1,18 @@
+{
+    "education": [
+        {
+            "school": "New Brunswick Community College",
+            "degree": "College Diploma",
+            "subject": "Programming and Mobile Applications",
+            "duration": "09/2022 - 06/2025",
+            "location": "Bathurst, NB"
+        },
+        {
+            "school": "EST LaSalle",
+            "degree": "Higher Technical Certificate",
+            "subject": "Industrial Computing and Automation",
+            "duration": "09/2019 - 09/2021",
+            "location": "Douala, Littoral"
+        }
+    ]
+}

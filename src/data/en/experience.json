@@ -1,0 +1,42 @@
+{
+    "experiences": [
+        {
+            "company": "Innovations et Solutions Technologiques Inc",
+            "position": "Full Stack Developer Intern",
+            "duration": "03/2025 - 06/2025",
+            "location": "Montreal, QC",
+            "description": [
+                "Full stack development of web applications.",
+                "Implementation of unit tests and comprehensive documentation.",
+                "Participation in code reviews, performance optimization, and UX improvements.",
+                "Team collaboration on various software projects using agile methodologies to ensure efficient and quality delivery."
+            ],
+            "technologies": ["Angular", "Node.js", "MS SQL Server", "React", "Express.js", "FastAPI", "Flask", "MongoDB", "Jira", "Kanban"]
+        },
+        {
+            "company": "SGMC - CASTEL Group Subsidiary",
+            "position": "IT Technician",
+            "duration": "05/2020 - 05/2021",
+            "location": "Douala, Littoral",
+            "description": [
+                "Development support and maintenance of enterprise IT systems.",
+                "Diagnosis, analysis, and resolution of technical issues.",
+                "Automation of internal processes to improve reliability and performance.",
+                "Collaboration with multidisciplinary teams on various projects."
+            ],
+            "technologies": ["C#", "Python", "C++"]
+        },
+        {
+            "company": "COCIC SARL",
+            "position": "IT Department Intern",
+            "duration": "12/2019 - 03/2020",
+            "location": "Douala, Littoral",
+            "description": [
+                "Data analysis and visualization.",
+                "Development of Python scripts to automate internal tasks.",
+                "Participation in maintenance and improvement of software tools."
+            ],
+            "technologies": ["Excel", "Python", "Google Sheets"]
+        }
+    ]
+}

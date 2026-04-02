@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "name": "Languages",
+      "skills": ["Python", "JavaScript", "TypeScript", "C#", "C++", "Dart"]
+    },
+    {
+      "name": "Frontend",
+      "skills": ["React.js", "Angular", "Flutter", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+    },
+    {
+      "name": "Backend",
+      "skills": ["FastAPI", "Flask", "Django", "Express.js", "Node.js"]
+    },
+    {
+      "name": "Databases",
+      "skills": ["PostgreSQL", "MongoDB", "SQL Server", "SQLite", "ChromaDB", "Firestore"]
+    },
+    {
+      "name": "AI & Data",
+      "skills": ["AI Integration", "Generative AI", "LangChain", "HuggingFace", "RAG", "NLP", "Prompt Engineering", "Pandas", "Numpy", "Pytorch"]
+    },
+    {
+      "name": "Tools & Services",
+      "skills": ["Git", "Docker", "Render", "Cloudflare R2", "OAuth2.0", "JWT", "Boto3", "Supabase", "Firebase", "Postman"]
+    },
+    {
+      "name": "Project Management",
+      "skills": ["Jira", "Kanban", "Agile Methodology"]
+    }
+  ]
+}

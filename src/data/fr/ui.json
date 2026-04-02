@@ -1,0 +1,43 @@
+{
+  "header": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "education": "Formation",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "about": {
+    "badge": "🟢 Ouvert à de nouvelles opportunités",
+    "greeting": "Bonjour, je suis",
+    "role": "Développeur Full Stack Python | Web & Mobile",
+    "description": "Passionné par le développement moderne et l'IA, j'aime créer des applications performantes, accessibles, bien structurées et qui répondent à des besoins. Mon objectif : combiner design, performance et expérience utilisateur optimale.",
+    "cta_contact": "Me contacter",
+    "cta_projects": "Voir mes projets",
+    "stat_experience": "An d'expérience",
+    "stat_projects": "Projets réalisés",
+    "stat_techs": "Technologies maîtrisées"
+  },
+  "experience": {
+    "label": "Parcours",
+    "title": "Expérience professionnelle"
+  },
+  "education": {
+    "label": "Formation",
+    "title": "Éducation"
+  },
+  "skills": {
+    "label": "Compétences",
+    "title": "Technologies que j'utilise"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Mes projets"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Travaillons ensemble",
+    "text": "Ouvert à de nouvelles opportunités, collaborations ou simplement pour échanger"
+  },
+  "footer": "Tous droits réservés."
+}

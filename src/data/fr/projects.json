@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "title": "Joblyx",
+            "description": "Une application mobile assistant de carrière IT intelligent disponible sur Play Store.",
+            "image": "assets/images/joblyx-presentation.png",
+            "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
+            "technologies": ["Flutter", "FastAPI", "PostgreSQL", "Cloudflare R2", "NLP", "OpenAI", "JWT", "OAuth2.0","Render", "Linkdin API", "Boto3"]
+        },
+        {
+            "title": "Joblyx website",
+            "description": "Site web vitrine de l'application Joblyx",
+            "image": "assets/images/joblyx-website.png",
+            "link": "https://joblyx.com",
+            "technologies": ["React.js"]
+        },
+        {
+            "title": "Commitclarify",
+            "description": "Une application web qui analyse la sécurité, la cohérence et la qualité de votre code sur GitHub.",
+            "image": "assets/images/commitclarify-presentation.png",
+            "link": "https://commitclarify.vercel.app",
+            "technologies": ["React.js", "FastAPI", "PostgreSQL", "RAG", "ChromaDB", "LangChain", "HuggingFace", "OAuth2.0", "OpenAI", "GitHub API"]
+        },
+        {
+            "title": "MyspotR",
+            "description": "Une application web qui analyse vos habitudes d'écoute Spotify pour déterminer votre humeur musicale et fournir des informations personnalisées.",
+            "image": "assets/images/MyspotR-logo.png",
+            "link": "https://github.com/AlexisIvan2000/MyspotR",
+            "technologies": ["React.js", "Flask", "SQLite", "Spotify API", "OAuth2.0"]
+        }
+    ]
+}
