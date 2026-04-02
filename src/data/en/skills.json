@@ -18,7 +18,7 @@
     },
     {
       "name": "AI & Data",
-      "skills": ["AI Integration", "Generative AI", "LangChain", "HuggingFace", "RAG", "NLP", "Prompt Engineering", "Pandas", "Numpy", "Pytorch"]
+      "skills": ["AI Integration", "Generative AI", "LangChain", "Hugging Face", "RAG", "NLP", "Prompt Engineering", "Pandas", "Numpy", "Pytorch"]
     },
     {
       "name": "Tools & Services",
