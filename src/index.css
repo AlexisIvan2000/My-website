@@ -46,8 +46,8 @@
 }
 
 :root {
-  --font-display: "Syne", sans-serif;
-  --font-body: "Outfit", sans-serif;
+  --font-display: "Lato", sans-serif;
+  --font-body: "Lato", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
 
   scroll-behavior: smooth;
