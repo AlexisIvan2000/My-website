@@ -25,8 +25,10 @@ export default function About() {
       <span className="about-badge">{t.badge}</span>
       <p className="about-greeting">{t.greeting}</p>
       <h1 className="about-name">
-        <span className="about-name-first">Alexis</span>
-        <span className="about-name-last">Moungang</span>
+        <span className="about-name-wrap">
+          <span className="about-name-first">Alexis</span>
+          <span className="about-name-last">Moungang</span>
+        </span>
       </h1>
       <h2 className="about-role">{t.role}</h2>
       <p className="about-desc">{t.description}</p>
