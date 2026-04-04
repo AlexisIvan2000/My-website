@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { ThemeProvider } from "./context/ThemeProvider";
 import { LanguageProvider } from "./context/LanguageProvider";
+import { Analytics } from "@vercel/analytics/react"
 import Home from "./screens/Home";
 import "./App.css";
 
@@ -25,6 +26,7 @@ function App() {
           <div className="glow-cursor" />
           <div className="grid-bg" />
           <Home />
+          <Analytics />
         </div>
       </LanguageProvider>
     </ThemeProvider>
