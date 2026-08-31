@@ -28,7 +28,8 @@
   },
   "skills": {
     "label": "Compétences",
-    "title": "Technologies que j'utilise"
+    "title": "Technologies que j'utilise",
+    "intro": "Ce que j'utilise au quotidien, réparti par domaine."
   },
   "projects": {
     "label": "Portfolio",

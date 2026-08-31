@@ -1,36 +1,111 @@
 {
   "skills": [
     {
+      "id": "languages",
       "name": "Languages",
-      "skills": ["Python", "JavaScript", "TypeScript", "C#", "C++", "Dart"]
+      "span": 2,
+      "skills": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "C++",
+        "Dart"
+      ]
     },
     {
+      "id": "frontend",
       "name": "Frontend",
-      "skills": ["React.js", "Angular", "Flutter", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+      "span": 2,
+      "skills": [
+        "React.js",
+        "Angular",
+        "Flutter",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
     },
     {
+      "id": "backend",
       "name": "Backend",
-      "skills": ["FastAPI", "Flask", "Django", "Express.js", "Node.js"]
+      "span": 2,
+      "skills": [
+        "FastAPI",
+        "Flask",
+        "Django",
+        "Express.js",
+        "Node.js"
+      ]
     },
     {
-      "name": "Databases",
-      "skills": ["PostgreSQL", "MongoDB", "SQL Server", "SQLite", "ChromaDB", "Firestore"]
-    },
-    {
+      "id": "ai",
       "name": "AI & Data",
-      "skills": ["AI Integration", "Generative AI", "LangChain", "Hugging Face", "RAG", "NLP", "Prompt Engineering", "Pandas", "Numpy", "Pytorch"]
+      "span": 3,
+      "skills": [
+        "AI Integration",
+        "Generative AI",
+        "LangChain",
+        "Hugging Face",
+        "RAG",
+        "NLP",
+        "Prompt Engineering",
+        "Pandas",
+        "Numpy",
+        "Pytorch"
+      ]
     },
     {
+      "id": "tools",
       "name": "Tools & Services",
-      "skills": ["Git", "Docker", "Render", "Cloudflare R2", "OAuth2.0", "JWT", "Boto3", "Supabase", "Firebase", "Postman"]
+      "span": 3,
+      "skills": [
+        "Git",
+        "Docker",
+        "Render",
+        "Cloudflare R2",
+        "OAuth2.0",
+        "JWT",
+        "Boto3",
+        "Supabase",
+        "Firebase",
+        "Postman"
+      ]
     },
     {
+      "id": "database",
+      "name": "Databases",
+      "span": 2,
+      "skills": [
+        "PostgreSQL",
+        "MongoDB",
+        "SQL Server",
+        "SQLite",
+        "ChromaDB",
+        "Firestore"
+      ]
+    },
+    {
+      "id": "testing",
       "name": "Testing",
-      "skills": ["Unit Testing", "E2E Testing", "Widget Testing", "Golden Tests"]
+      "span": 2,
+      "skills": [
+        "Unit Testing",
+        "E2E Testing",
+        "Widget Testing",
+        "Golden Tests"
+      ]
     },
     {
+      "id": "pm",
       "name": "Project Management",
-      "skills": ["Jira", "Kanban", "Agile Methodology"]
+      "span": 2,
+      "skills": [
+        "Jira",
+        "Kanban",
+        "Agile Methodology"
+      ]
     }
   ]
 }

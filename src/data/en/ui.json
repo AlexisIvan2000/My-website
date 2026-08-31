@@ -28,7 +28,8 @@
   },
   "skills": {
     "label": "Skills",
-    "title": "Technologies I use"
+    "title": "Technologies I use",
+    "intro": "What I work with day to day, grouped by area."
   },
   "projects": {
     "label": "Portfolio",

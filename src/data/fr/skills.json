@@ -1,36 +1,111 @@
 {
   "skills": [
     {
+      "id": "languages",
       "name": "Langages",
-      "skills": ["Python", "JavaScript", "TypeScript", "C#", "C++", "Dart"]
+      "span": 2,
+      "skills": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "C++",
+        "Dart"
+      ]
     },
     {
+      "id": "frontend",
       "name": "Frontend",
-      "skills": ["React.js", "Angular", "Flutter", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+      "span": 2,
+      "skills": [
+        "React.js",
+        "Angular",
+        "Flutter",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
     },
     {
+      "id": "backend",
       "name": "Backend",
-      "skills": ["FastAPI", "Flask", "Django", "Express.js", "Node.js"]
+      "span": 2,
+      "skills": [
+        "FastAPI",
+        "Flask",
+        "Django",
+        "Express.js",
+        "Node.js"
+      ]
     },
     {
-      "name": "Base de données",
-      "skills": ["PostgreSQL", "MongoDB", "SQL Server", "SQLite", "ChromaDB", "Firestore"]
-    },
-    {
+      "id": "ai",
       "name": "IA & Data",
-      "skills": ["Intégration d'IA", "IA générative", "LangChain", "Hugging Face", "RAG", "NLP", "Ingénierie des prompts", "Pandas", "Numpy", "Pytorch"]
+      "span": 3,
+      "skills": [
+        "Intégration d'IA",
+        "IA générative",
+        "LangChain",
+        "Hugging Face",
+        "RAG",
+        "NLP",
+        "Ingénierie des prompts",
+        "Pandas",
+        "Numpy",
+        "Pytorch"
+      ]
     },
     {
+      "id": "tools",
       "name": "Outils & Services",
-      "skills": ["Git", "Docker", "Render", "Cloudflare R2", "OAuth2.0", "JWT", "Boto3", "Supabase", "Firebase", "Postman"]
+      "span": 3,
+      "skills": [
+        "Git",
+        "Docker",
+        "Render",
+        "Cloudflare R2",
+        "OAuth2.0",
+        "JWT",
+        "Boto3",
+        "Supabase",
+        "Firebase",
+        "Postman"
+      ]
     },
     {
+      "id": "database",
+      "name": "Base de données",
+      "span": 2,
+      "skills": [
+        "PostgreSQL",
+        "MongoDB",
+        "SQL Server",
+        "SQLite",
+        "ChromaDB",
+        "Firestore"
+      ]
+    },
+    {
+      "id": "testing",
       "name": "Tests",
-      "skills": ["Tests unitaires", "Tests E2E", "Tests de widgets", "Golden tests"]
+      "span": 2,
+      "skills": [
+        "Tests unitaires",
+        "Tests E2E",
+        "Tests de widgets",
+        "Golden tests"
+      ]
     },
     {
+      "id": "pm",
       "name": "Gestion de projet",
-      "skills": ["Jira", "Kanban", "Méthodologie Agile"]
+      "span": 2,
+      "skills": [
+        "Jira",
+        "Kanban",
+        "Méthodologie Agile"
+      ]
     }
   ]
 }
