@@ -1981,6 +1981,10 @@ section {
   border: 1px solid var(--border);
   background: var(--bg-card);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
   transition: border-color 0.4s, box-shadow 0.4s;
 }
 
@@ -2067,7 +2071,6 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 24px;
   padding: 15px 30px;
   border-radius: 999px;
   overflow: hidden;
@@ -2115,7 +2118,7 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 12px 18px;
-  margin-top: 32px;
+  align-self: stretch;
   padding-top: 24px;
   border-top: 1px solid var(--border);
 }
