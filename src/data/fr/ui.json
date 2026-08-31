@@ -33,7 +33,10 @@
   "projects": {
     "label": "Portfolio",
     "title": "Mes projets",
-    "cta": "Voir le projet"
+    "intro": "Trois produits en ligne, du backend au déploiement.",
+    "stack": "Stack technique",
+    "highlights": "Ce qui compte dedans",
+    "shots": "Captures"
   },
   "contact": {
     "label": "Contact",

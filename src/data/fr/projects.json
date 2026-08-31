@@ -1,36 +1,230 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "id": "oubliepas",
+      "title": "OubliePas",
+      "tagline": "Suivi d'abonnements et de factures",
+      "type": "web",
+      "accent": "#4f8ef7",
+      "year": "2026",
+      "status": "En ligne",
+      "description": "Une seule question : qu'est-ce que je paie, et qu'est-ce qui va être prélevé ? Les échéances sont des lignes réelles en base, écrites à l'avance par un job quotidien, et non un calcul refait à chaque lecture que personne ne peut auditer.",
+      "metrics": [
         {
-            "title": "Joblyx",
-            "description": "Une application mobile assistant de carrière IT intelligent disponible sur Play Store.",
-            "image": "assets/images/joblyx-presentation.png",
-            "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
-            "technologies": ["Flutter", "FastAPI", "PostgreSQL", "Cloudflare R2", "NLP", "OpenAI", "JWT", "OAuth2.0","Render", "Linkdin API", "Boto3"],
-            "action": "Voir l'application sur Play Store"
+          "value": "1 047",
+          "label": "tests backend"
         },
         {
-            "title": "Joblyx website",
-            "description": "Site web vitrine de l'application Joblyx",
-            "image": "assets/images/joblyx-website.png",
-            "link": "https://joblyx.com",
-            "technologies": ["React.js"],
-            "action": "Voir le site web"
+          "value": "349",
+          "label": "tests frontend"
         },
         {
-            "title": "Commitclarify",
-            "description": "Une application web qui analyse la sécurité, la cohérence et la qualité de votre code sur GitHub.",
-            "image": "assets/images/commitclarify-presentation.png",
-            "link": "https://commitclarify.vercel.app",
-            "technologies": ["React.js", "FastAPI", "PostgreSQL", "RAG", "ChromaDB", "LangChain", "HuggingFace", "OAuth2.0", "OpenAI", "GitHub API"],
-            "action": "Voir l'application web"
-        },
-        {
-            "title": "MyspotR",
-            "description": "Une application web qui analyse vos habitudes d'écoute Spotify pour déterminer votre humeur musicale et fournir des informations personnalisées.",
-            "image": "assets/images/MyspotR-logo.png",
-            "link": "https://github.com/AlexisIvan2000/MyspotR",
-            "technologies": ["React.js", "Flask", "SQLite", "Spotify API", "OAuth2.0"],
-            "action": "Voir le code source sur GitHub"
+          "value": "PWA",
+          "label": "fr / en, installable"
         }
-    ]
+      ],
+      "highlights": [
+        "Rappels e-mail et push web, chaque envoi porte une clé pour partir exactement une fois",
+        "Migrations appliquées au démarrage, sérialisées entre réplicas par un verrou consultatif",
+        "Les erreurs sont un contrat : le client réagit à un code, jamais au message",
+        "Suppression douce purgée à 30 jours, la garde passe par deux helpers uniques"
+      ],
+      "technologies": [
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy 2",
+        "Alembic",
+        "Redis",
+        "Cloudflare R2",
+        "S3 API",
+        "boto3",
+        "React 19",
+        "Vite 8",
+        "CSS Modules",
+        "Web Push",
+        "Resend"
+      ],
+      "link": "https://oubliepas.com/",
+      "action": "Voir le site",
+      "shots": [
+        {
+          "src": "/assets/screenshots/oubliepas/Dashboard.webp",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Subscriptions.webp",
+          "label": "Abonnements"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Calendar.webp",
+          "label": "Calendrier"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Breakdown.webp",
+          "label": "Répartition"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Breakdown_2.webp",
+          "label": "Lignes lourdes"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Reminders.webp",
+          "label": "Rappels"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/reminders_email.webp",
+          "label": "E-mail"
+        }
+      ]
+    },
+    {
+      "id": "joblyx",
+      "title": "Joblyx",
+      "tagline": "Assistant de carrière IT sur Play Store",
+      "type": "mobile",
+      "accent": "#1aa392",
+      "year": "2026",
+      "status": "Play Store",
+      "description": "Une application mobile qui construit une roadmap de montée en compétences à partir d'un CV, simule des entretiens et suit les candidatures. Trois applications indépendantes : l'API, le mobile et un panel d'administration.",
+      "metrics": [
+        {
+          "value": "3",
+          "label": "apps : API, mobile, panel"
+        },
+        {
+          "value": "+100",
+          "label": "tests backend"
+        },
+        {
+          "value": "SSE",
+          "label": "réponses IA en streaming"
+        }
+      ],
+      "highlights": [
+        "API versionnée sous /v1, routers client et admin strictement séparés",
+        "Rôles résolus en base à chaque requête, jamais lus depuis le JWT",
+        "Toutes les réponses IA arrivent en streaming, pas derrière un spinner",
+        "Panel admin React distinct, affichant le coût OpenAI réel"
+      ],
+      "technologies": [
+        "Flutter",
+        "Riverpod 3",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy 2",
+        "OpenAI",
+        "Cloudflare R2",
+        "S3 API",
+        "boto3",
+        "JWT",
+        "OAuth 2.0",
+        "spaCy",
+        "Sentry",
+        "React 19"
+      ],
+      "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
+      "action": "Voir sur le Play Store",
+      "shots": [
+        {
+          "src": "/assets/screenshots/joblyx/Dashboard.webp",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Roadmap.webp",
+          "label": "Roadmap"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Assistant.webp",
+          "label": "Assistant"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Analyze.webp",
+          "label": "Analyse de CV"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Candidatures.webp",
+          "label": "Candidatures"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Profil.webp",
+          "label": "Profil"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/parametres.webp",
+          "label": "Paramètres"
+        }
+      ]
+    },
+    {
+      "id": "commitclarify",
+      "title": "CommitClarify",
+      "tagline": "Analyse automatisée de dépôts GitHub",
+      "type": "web",
+      "accent": "#d08a45",
+      "year": "2026",
+      "status": "En ligne",
+      "description": "Quatre agents passent un dépôt au crible en parallèle : secrets exposés, .gitignore, qualité du code, README confronté au code réel. Les linters fournissent le déterministe et reproductible ; le LLM ne traite que ce que l'outillage statique ne sait pas voir.",
+      "metrics": [
+        {
+          "value": "137",
+          "label": "tests backend"
+        },
+        {
+          "value": "4",
+          "label": "agents en parallèle"
+        },
+        {
+          "value": "PDF",
+          "label": "et export JSON"
+        }
+      ],
+      "highlights": [
+        "Embeddings calculés localement : le code n'est jamais envoyé à un service tiers",
+        "Index Chroma clé par utilisateur, dépôt et SHA : un dépôt inchangé réutilise son index",
+        "OAuth GitHub par code à usage unique plutôt que des JWT dans l'URL, token chiffré Fernet",
+        "Ruff et ESLint tournent pour de vrai contre du code cassé dans les tests, sans mock"
+      ],
+      "technologies": [
+        "FastAPI",
+        "PostgreSQL",
+        "ChromaDB",
+        "LangChain",
+        "sentence-transformers",
+        "OpenAI",
+        "Ruff",
+        "ESLint",
+        "ReportLab",
+        "React 19",
+        "Vite"
+      ],
+      "link": "https://commitclarify.vercel.app",
+      "action": "Voir l'application",
+      "shots": [
+        {
+          "src": "/assets/screenshots/commitclarify/report.webp",
+          "label": "Rapport"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/repositories.webp",
+          "label": "Dépôts"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/scan.webp",
+          "label": "Scan"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/history.webp",
+          "label": "Historique"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/landingpage.webp",
+          "label": "Accueil"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/account.webp",
+          "label": "Compte"
+        }
+      ]
+    }
+  ]
 }

@@ -33,7 +33,10 @@
   "projects": {
     "label": "Portfolio",
     "title": "My projects",
-    "cta": "View project"
+    "intro": "Three shipped products, from backend to deployment.",
+    "stack": "Tech stack",
+    "highlights": "What matters inside",
+    "shots": "Screens"
   },
   "contact": {
     "label": "Contact",

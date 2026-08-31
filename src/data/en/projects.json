@@ -1,36 +1,230 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "id": "oubliepas",
+      "title": "OubliePas",
+      "tagline": "Subscription and bill tracker",
+      "type": "web",
+      "accent": "#4f8ef7",
+      "year": "2026",
+      "status": "Live",
+      "description": "One question only: what am I paying for, and what is about to be charged? Due dates are materialised rows written ahead of time by a daily job, not a calculation redone on every read that nobody can audit.",
+      "metrics": [
         {
-            "title": "Joblyx",
-            "description": "An intelligent IT career assistant mobile app available on Play Store.",
-            "image": "assets/images/joblyx-presentation.png",
-            "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
-            "technologies": ["Flutter", "FastAPI", "PostgreSQL", "Cloudflare R2", "NLP", "OpenAI", "JWT", "OAuth2.0","Render", "Linkdin API", "Boto3"],
-            "action": "View app on Play Store"
+          "value": "1,047",
+          "label": "backend tests"
         },
         {
-            "title": "Joblyx website",
-            "description": "Landing page for the Joblyx application.",
-            "image": "assets/images/joblyx-website.png",
-            "link": "https://joblyx.com",
-            "technologies": ["React.js"],
-            "action": "View website"
+          "value": "349",
+          "label": "frontend tests"
         },
         {
-            "title": "Commitclarify",
-            "description": "A web application that analyzes the security, consistency, and quality of your code on GitHub.",
-            "image": "assets/images/commitclarify-presentation.png",
-            "link": "https://commitclarify.vercel.app",
-            "technologies": ["React.js", "FastAPI", "PostgreSQL", "RAG", "ChromaDB", "LangChain", "HuggingFace", "OAuth2.0", "OpenAI", "GitHub API"],
-            "action": "View web app"
-        },
-        {
-            "title": "MyspotR",
-            "description": "A web application that analyzes your Spotify listening habits to determine your musical mood and provide personalized insights.",
-            "image": "assets/images/MyspotR-logo.png",
-            "link": "https://github.com/AlexisIvan2000/MyspotR",
-            "technologies": ["React.js", "Flask", "SQLite", "Spotify API", "OAuth2.0"],
-            "action": "View source code on GitHub"
+          "value": "PWA",
+          "label": "fr / en, installable"
         }
-    ]
+      ],
+      "highlights": [
+        "Email and web push reminders, each one keyed so it goes out exactly once",
+        "Migrations run at startup, serialised across replicas by an advisory lock",
+        "Errors are a contract: the client switches on a code, never on the message",
+        "Soft delete purged after 30 days, guarded through two single helpers"
+      ],
+      "technologies": [
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy 2",
+        "Alembic",
+        "Redis",
+        "Cloudflare R2",
+        "S3 API",
+        "boto3",
+        "React 19",
+        "Vite 8",
+        "CSS Modules",
+        "Web Push",
+        "Resend"
+      ],
+      "link": "https://oubliepas.com/",
+      "action": "Visit the site",
+      "shots": [
+        {
+          "src": "/assets/screenshots/oubliepas/Dashboard.webp",
+          "label": "Dashboard"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Subscriptions.webp",
+          "label": "Subscriptions"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Calendar.webp",
+          "label": "Calendar"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Breakdown.webp",
+          "label": "Breakdown"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Breakdown_2.webp",
+          "label": "Heaviest lines"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/Reminders.webp",
+          "label": "Reminders"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/reminders_email.webp",
+          "label": "Email"
+        }
+      ]
+    },
+    {
+      "id": "joblyx",
+      "title": "Joblyx",
+      "tagline": "IT career assistant, on the Play Store",
+      "type": "mobile",
+      "accent": "#1aa392",
+      "year": "2026",
+      "status": "Play Store",
+      "description": "A mobile app that builds a skill-growth roadmap from a resume, simulates interviews and tracks applications. Three independent applications: the API, the mobile client and an admin panel.",
+      "metrics": [
+        {
+          "value": "3",
+          "label": "apps: API, mobile, panel"
+        },
+        {
+          "value": "+100",
+          "label": "backend tests"
+        },
+        {
+          "value": "SSE",
+          "label": "AI answers streamed"
+        }
+      ],
+      "highlights": [
+        "API versioned under /v1, client and admin routers strictly separated",
+        "Roles resolved from the database on every request, never read from the JWT",
+        "Every AI answer streams in as text rather than sitting behind a spinner",
+        "Separate React admin panel, showing the actual OpenAI cost"
+      ],
+      "technologies": [
+        "Flutter",
+        "Riverpod 3",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy 2",
+        "OpenAI",
+        "Cloudflare R2",
+        "S3 API",
+        "boto3",
+        "JWT",
+        "OAuth 2.0",
+        "spaCy",
+        "Sentry",
+        "React 19"
+      ],
+      "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
+      "action": "View on the Play Store",
+      "shots": [
+        {
+          "src": "/assets/screenshots/joblyx/Dashboard.webp",
+          "label": "Dashboard"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Roadmap.webp",
+          "label": "Roadmap"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Assistant.webp",
+          "label": "Assistant"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Analyze.webp",
+          "label": "Resume analysis"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Candidatures.webp",
+          "label": "Applications"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/Profil.webp",
+          "label": "Profile"
+        },
+        {
+          "src": "/assets/screenshots/joblyx/parametres.webp",
+          "label": "Settings"
+        }
+      ]
+    },
+    {
+      "id": "commitclarify",
+      "title": "CommitClarify",
+      "tagline": "Automated GitHub repository analysis",
+      "type": "web",
+      "accent": "#d08a45",
+      "year": "2026",
+      "status": "Live",
+      "description": "Four agents run against a repository in parallel: exposed secrets, .gitignore, code quality, README checked against the actual code. The linters provide what is deterministic and reproducible; the LLM only handles what static tooling cannot see.",
+      "metrics": [
+        {
+          "value": "137",
+          "label": "backend tests"
+        },
+        {
+          "value": "4",
+          "label": "agents in parallel"
+        },
+        {
+          "value": "PDF",
+          "label": "and JSON export"
+        }
+      ],
+      "highlights": [
+        "Embeddings computed locally: no code is ever sent to a third-party service",
+        "Chroma index keyed by user, repository and SHA: an unchanged repo reuses its index",
+        "GitHub OAuth through a single-use code rather than JWTs in the URL, token Fernet-encrypted",
+        "Ruff and ESLint run for real against deliberately broken code in the tests, no mocks"
+      ],
+      "technologies": [
+        "FastAPI",
+        "PostgreSQL",
+        "ChromaDB",
+        "LangChain",
+        "sentence-transformers",
+        "OpenAI",
+        "Ruff",
+        "ESLint",
+        "ReportLab",
+        "React 19",
+        "Vite"
+      ],
+      "link": "https://commitclarify.vercel.app",
+      "action": "Open the app",
+      "shots": [
+        {
+          "src": "/assets/screenshots/commitclarify/report.webp",
+          "label": "Report"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/repositories.webp",
+          "label": "Repositories"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/scan.webp",
+          "label": "Scan"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/history.webp",
+          "label": "History"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/landingpage.webp",
+          "label": "Landing"
+        },
+        {
+          "src": "/assets/screenshots/commitclarify/account.webp",
+          "label": "Account"
+        }
+      ]
+    }
+  ]
 }

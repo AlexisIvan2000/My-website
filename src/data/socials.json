@@ -3,17 +3,17 @@
     {
       "label": "Email",
       "href": "mailto:alexiskombou75@gmail.com",
-      "icon": "/assets/images/email.svg"
+      "icon": "/assets/logos/email.svg"
     },
     {
       "label": "GitHub",
       "href": "https://github.com/AlexisIvan2000",
-      "icon": "/assets/images/github.svg"
+      "icon": "/assets/logos/github.svg"
     },
     {
       "label": "LinkedIn",
       "href": "https://www.linkedin.com/in/alexis-moungang-396104371",
-      "icon": "/assets/images/linkedin.svg"
+      "icon": "/assets/logos/linkedin.svg"
     }
   ]
 }
