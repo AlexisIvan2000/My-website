@@ -5,10 +5,13 @@
     "education": "Education",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu",
+    "toggle_theme": "Switch between light and dark theme",
+    "toggle_lang": "Switch language, French or English"
   },
   "about": {
-    "badge": "🟢 Open to new opportunities",
+    "badge": "Open to new opportunities",
     "greeting": "Hi, I'm",
     "role": "Full Stack Python Developer | Web & Mobile",
     "description": "Passionate about modern development and AI, I enjoy building performant, accessible, well-structured applications that solve real problems. My goal: combining design, performance, and optimal user experience.",
@@ -56,8 +59,10 @@
   "contact": {
     "label": "Contact",
     "title": "Let's work together",
-    "text": "Open to new opportunities, collaborations, or just a conversation.",
-    "email_label": "Send an email"
+    "text": "Open to new opportunities, to collaborations, or simply to talk shop.",
+    "available": "Available now",
+    "cta": "Send an email",
+    "elsewhere": "Elsewhere"
   },
   "footer": "All rights reserved."
 }

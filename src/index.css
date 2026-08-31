@@ -2,45 +2,56 @@
 
 :root,
 [data-theme="dark"] {
-  --green: #8cffa8;
-  --green-dim: rgba(140, 255, 168, 0.15);
-  --green-glow: rgba(140, 255, 168, 0.3);
-  --bg: #0a0a0f;
-  --bg-card: #111118;
-  --bg-card-hover: #16161f;
-  --border: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(140, 255, 168, 0.2);
-  --text: #8a8a9a;
-  --text-bright: #e4e4ed;
-  --text-muted: #7a7a8e;
-  --header-bg: rgba(10, 10, 15, 0.8);
+  --brand: #6cb8ff;
+  --brand-alt: #7c8cf8;
+  --brand-dim: rgba(108, 184, 255, 0.14);
+  --brand-glow: rgba(108, 184, 255, 0.35);
+  --bg: #070a12;
+  --bg-card: #0d1220;
+  --bg-card-hover: #121a2c;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(108, 184, 255, 0.26);
+  --text: #8b93a7;
+  --text-bright: #e8edf7;
+  --text-muted: #79839c;
+  --header-bg: rgba(7, 10, 18, 0.72);
   --icon-filter: invert(1) brightness(2);
   --icon-filter-hover: invert(0) brightness(0.2);
-  --watermark-color: rgba(255, 255, 255, 0.02);
-  --grid-color: rgba(255, 255, 255, 0.02);
-  --glow-color: rgba(140, 255, 168, 0.06);
+  --watermark-color: rgba(255, 255, 255, 0.022);
+  --glow-color: rgba(108, 184, 255, 0.07);
+
+  /* Voiles d'aurore du fond */
+  --veil-1: rgba(108, 184, 255, 0.3);
+  --veil-2: rgba(124, 140, 248, 0.24);
+  --veil-3: rgba(56, 189, 248, 0.16);
+  --grain-opacity: 0.045;
 
   color-scheme: dark;
 }
 
 [data-theme="light"] {
-  --green: #16a34a;
-  --green-dim: rgba(22, 163, 74, 0.08);
-  --green-glow: rgba(22, 163, 74, 0.2);
-  --bg: #fafafa;
+  --brand: #1d6fd4;
+  --brand-alt: #4f46e5;
+  --brand-dim: rgba(29, 111, 212, 0.09);
+  --brand-glow: rgba(29, 111, 212, 0.22);
+  --bg: #f7f9fc;
   --bg-card: #ffffff;
-  --bg-card-hover: #f5f5f5;
-  --border: rgba(0, 0, 0, 0.08);
-  --border-hover: rgba(22, 163, 74, 0.3);
-  --text: #4a4a4a;
-  --text-bright: #1a1a1a;
-  --text-muted: #6b6b6b;
-  --header-bg: rgba(250, 250, 250, 0.85);
+  --bg-card-hover: #f1f5fb;
+  --border: rgba(15, 23, 42, 0.09);
+  --border-hover: rgba(29, 111, 212, 0.3);
+  --text: #4a5568;
+  --text-bright: #0f172a;
+  --text-muted: #64748b;
+  --header-bg: rgba(247, 249, 252, 0.82);
   --icon-filter: none;
   --icon-filter-hover: invert(1) brightness(2);
-  --watermark-color: rgba(0, 0, 0, 0.03);
-  --grid-color: rgba(0, 0, 0, 0.03);
-  --glow-color: rgba(22, 163, 74, 0.04);
+  --watermark-color: rgba(15, 23, 42, 0.032);
+  --glow-color: rgba(29, 111, 212, 0.05);
+
+  --veil-1: rgba(29, 111, 212, 0.13);
+  --veil-2: rgba(79, 70, 229, 0.1);
+  --veil-3: rgba(14, 165, 233, 0.09);
+  --grain-opacity: 0.02;
 
   color-scheme: light;
 }
@@ -69,7 +80,7 @@ body {
   background: var(--bg);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 img {
@@ -82,11 +93,24 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+}
+
 ::selection {
-  background: var(--green);
+  background: var(--brand);
   color: var(--bg);
+}
+
+/* Anneau de focus visible, cohérent partout */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 4px;
 }

@@ -23,8 +23,13 @@ function App() {
     <ThemeProvider>
       <LanguageProvider>
         <div className="app" ref={glowRef}>
+          <div className="bg-aurora" aria-hidden="true">
+            <span className="bg-veil bg-veil--1" />
+            <span className="bg-veil bg-veil--2" />
+            <span className="bg-veil bg-veil--3" />
+          </div>
+          <div className="bg-grain" aria-hidden="true" />
           <div className="glow-cursor" />
-          <div className="grid-bg" />
           <Home />
           <Analytics />
         </div>

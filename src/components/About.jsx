@@ -22,7 +22,10 @@ export default function About() {
   return (
     <section id="about" className="about" ref={ref}>
       <div className="about-watermark" aria-hidden="true">FULL STACK</div>
-      <span className="about-badge">{t.badge}</span>
+      <span className="about-badge">
+        <i className="about-badge-dot" aria-hidden="true" />
+        {t.badge}
+      </span>
       <p className="about-greeting">{t.greeting}</p>
       <h1 className="about-name">
         <span className="about-name-wrap">
