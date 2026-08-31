@@ -14,13 +14,24 @@
     "description": "Passionate about modern development and AI, I enjoy building performant, accessible, well-structured applications that solve real problems. My goal: combining design, performance, and optimal user experience.",
     "cta_contact": "Contact me",
     "cta_projects": "See my projects",
-    "stat_experience": "Year of experience",
-    "stat_projects": "Projects completed",
-    "stat_techs": "Technologies mastered"
+    "stats": {
+      "experience": {
+        "value": "1.5",
+        "label": "Years of experience"
+      },
+      "projects": {
+        "label": "Apps in production"
+      },
+      "techs": {
+        "value": "+15",
+        "label": "Technologies used"
+      }
+    }
   },
   "experience": {
     "label": "Career",
-    "title": "Professional experience"
+    "title": "Professional experience",
+    "current": "Current"
   },
   "education": {
     "label": "Education",
@@ -36,8 +47,11 @@
     "title": "My projects",
     "intro": "Three shipped products, from backend to deployment.",
     "stack": "Tech stack",
-    "highlights": "What matters inside",
-    "shots": "Screens"
+    "highlights": "Under the hood",
+    "shots": "Screens",
+    "features": "Features",
+    "private": "Source code is private.",
+    "private_cta": "Get in touch to see it"
   },
   "contact": {
     "label": "Contact",

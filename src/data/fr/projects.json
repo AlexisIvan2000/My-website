@@ -8,7 +8,24 @@
       "accent": "#4f8ef7",
       "year": "2026",
       "status": "En ligne",
-      "description": "Une seule question : qu'est-ce que je paie, et qu'est-ce qui va être prélevé ? Les échéances sont des lignes réelles en base, écrites à l'avance par un job quotidien, et non un calcul refait à chaque lecture que personne ne peut auditer.",
+      "features": [
+        {
+          "title": "Abonnements et factures",
+          "text": "Deux natures de dépense, un même suivi : catégorie, cadence, délai de rappel, et le montant vu par prélèvement comme à l'année."
+        },
+        {
+          "title": "Calendrier des échéances",
+          "text": "Chaque échéance est une ligne écrite en base à l'avance. Un clic la marque payée. Sur téléphone, la grille garde ses sept colonnes et passe en pastilles."
+        },
+        {
+          "title": "Répartition des dépenses",
+          "text": "Toutes les catégories, pas seulement les cinq premières, et le classement des lignes les plus lourdes à l'année comme au mois."
+        },
+        {
+          "title": "Rappels multicanal",
+          "text": "Avant l'échéance, en retard, fin d'essai : trois familles d'alertes activables séparément, par e-mail et push web, plus un récapitulatif le lundi."
+        }
+      ],
       "metrics": [
         {
           "value": "1 047",
@@ -26,26 +43,72 @@
       "highlights": [
         "Rappels e-mail et push web, chaque envoi porte une clé pour partir exactement une fois",
         "Migrations appliquées au démarrage, sérialisées entre réplicas par un verrou consultatif",
-        "Les erreurs sont un contrat : le client réagit à un code, jamais au message",
-        "Suppression douce purgée à 30 jours, la garde passe par deux helpers uniques"
+        "Les erreurs sont un contrat : le client réagit à un code, jamais au message"
       ],
-      "technologies": [
-        "FastAPI",
-        "PostgreSQL",
-        "SQLAlchemy 2",
-        "Alembic",
-        "Redis",
-        "Cloudflare R2",
-        "S3 API",
-        "boto3",
-        "React 19",
-        "Vite 8",
-        "CSS Modules",
-        "Web Push",
-        "Resend"
+      "stack": [
+        {
+          "label": "Backend",
+          "items": [
+            "FastAPI",
+            "Python 3.13",
+            "SQLAlchemy 2",
+            "Alembic",
+            "Pydantic 2"
+          ]
+        },
+        {
+          "label": "Base de données",
+          "items": [
+            "PostgreSQL",
+            "asyncpg",
+            "Redis"
+          ]
+        },
+        {
+          "label": "Authentification",
+          "items": [
+            "JWT Auth",
+            "OAuth Google",
+            "argon2"
+          ]
+        },
+        {
+          "label": "Stockage",
+          "items": [
+            "Cloudflare R2",
+            "S3 API",
+            "boto3",
+            "Pillow"
+          ]
+        },
+        {
+          "label": "Frontend",
+          "items": [
+            "React 19",
+            "Vite 8",
+            "React Router 7",
+            "CSS Modules"
+          ]
+        },
+        {
+          "label": "Notifications",
+          "items": [
+            "Web Push",
+            "py-vapid",
+            "Resend"
+          ]
+        },
+        {
+          "label": "Tests",
+          "items": [
+            "pytest",
+            "Vitest"
+          ]
+        }
       ],
       "link": "https://oubliepas.com/",
       "action": "Voir le site",
+      "private": true,
       "shots": [
         {
           "src": "/assets/screenshots/oubliepas/Dashboard.webp",
@@ -85,7 +148,24 @@
       "accent": "#1aa392",
       "year": "2026",
       "status": "Play Store",
-      "description": "Une application mobile qui construit une roadmap de montée en compétences à partir d'un CV, simule des entretiens et suit les candidatures. Trois applications indépendantes : l'API, le mobile et un panel d'administration.",
+      "features": [
+        {
+          "title": "Roadmap générée depuis le CV",
+          "text": "Le CV est analysé, les compétences extraites, et une roadmap de montée en compétences se construit phase par phase avec sa progression."
+        },
+        {
+          "title": "Coach et simulateur d'entretien",
+          "text": "Un assistant relit le CV et conduit des entretiens simulés. Les réponses arrivent en streaming, mot après mot."
+        },
+        {
+          "title": "Suivi des candidatures",
+          "text": "Chaque candidature garde son statut, de l'envoi à la réponse, avec les entretiens qui s'y rattachent."
+        },
+        {
+          "title": "Panel d'administration",
+          "text": "Une console React séparée : statistiques, gestion des comptes, journal d'audit, erreurs Sentry et coût OpenAI réel."
+        }
+      ],
       "metrics": [
         {
           "value": "3",
@@ -103,27 +183,77 @@
       "highlights": [
         "API versionnée sous /v1, routers client et admin strictement séparés",
         "Rôles résolus en base à chaque requête, jamais lus depuis le JWT",
-        "Toutes les réponses IA arrivent en streaming, pas derrière un spinner",
-        "Panel admin React distinct, affichant le coût OpenAI réel"
+        "Accès de 24 h, rafraîchissement de 30 jours avec rotation, mots de passe hachés en argon2"
       ],
-      "technologies": [
-        "Flutter",
-        "Riverpod 3",
-        "FastAPI",
-        "PostgreSQL",
-        "SQLAlchemy 2",
-        "OpenAI",
-        "Cloudflare R2",
-        "S3 API",
-        "boto3",
-        "JWT",
-        "OAuth 2.0",
-        "spaCy",
-        "Sentry",
-        "React 19"
+      "stack": [
+        {
+          "label": "Mobile",
+          "items": [
+            "Flutter",
+            "Riverpod 3",
+            "Dio",
+            "go_router"
+          ]
+        },
+        {
+          "label": "Backend",
+          "items": [
+            "FastAPI",
+            "Python 3.13",
+            "SQLAlchemy 2",
+            "Alembic"
+          ]
+        },
+        {
+          "label": "Base de données",
+          "items": [
+            "PostgreSQL",
+            "asyncpg"
+          ]
+        },
+        {
+          "label": "Authentification",
+          "items": [
+            "JWT Auth",
+            "OAuth LinkedIn",
+            "argon2"
+          ]
+        },
+        {
+          "label": "Stockage",
+          "items": [
+            "Cloudflare R2",
+            "S3 API",
+            "boto3"
+          ]
+        },
+        {
+          "label": "IA",
+          "items": [
+            "OpenAI",
+            "spaCy",
+            "PyMuPDF"
+          ]
+        },
+        {
+          "label": "Panel admin",
+          "items": [
+            "React 19",
+            "Vite",
+            "Recharts"
+          ]
+        },
+        {
+          "label": "Supervision",
+          "items": [
+            "Sentry",
+            "APScheduler"
+          ]
+        }
       ],
       "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
       "action": "Voir sur le Play Store",
+      "private": true,
       "shots": [
         {
           "src": "/assets/screenshots/joblyx/Dashboard.webp",
@@ -163,7 +293,24 @@
       "accent": "#d08a45",
       "year": "2026",
       "status": "En ligne",
-      "description": "Quatre agents passent un dépôt au crible en parallèle : secrets exposés, .gitignore, qualité du code, README confronté au code réel. Les linters fournissent le déterministe et reproductible ; le LLM ne traite que ce que l'outillage statique ne sait pas voir.",
+      "features": [
+        {
+          "title": "Quatre agents en parallèle",
+          "text": "Secrets exposés, .gitignore, qualité du code, README confronté au code réel : quatre analyses lancées ensemble sur un même dépôt."
+        },
+        {
+          "title": "Le déterministe d'abord",
+          "text": "Ruff, ESLint et le scan des noms de fichiers produisent des résultats reproductibles. Le LLM ne traite que ce qu'ils ne savent pas voir."
+        },
+        {
+          "title": "Analyse suivie en direct",
+          "text": "Un flux SSE affiche l'état réel de l'analyse : récupération, indexation, analyse, terminé."
+        },
+        {
+          "title": "Rapport exportable",
+          "text": "Chaque rapport se lit dans l'application et s'exporte en PDF ou en JSON, en français comme en anglais."
+        }
+      ],
       "metrics": [
         {
           "value": "137",
@@ -181,24 +328,72 @@
       "highlights": [
         "Embeddings calculés localement : le code n'est jamais envoyé à un service tiers",
         "Index Chroma clé par utilisateur, dépôt et SHA : un dépôt inchangé réutilise son index",
-        "OAuth GitHub par code à usage unique plutôt que des JWT dans l'URL, token chiffré Fernet",
-        "Ruff et ESLint tournent pour de vrai contre du code cassé dans les tests, sans mock"
+        "OAuth GitHub par code à usage unique plutôt que des JWT dans l'URL, token chiffré Fernet"
       ],
-      "technologies": [
-        "FastAPI",
-        "PostgreSQL",
-        "ChromaDB",
-        "LangChain",
-        "sentence-transformers",
-        "OpenAI",
-        "Ruff",
-        "ESLint",
-        "ReportLab",
-        "React 19",
-        "Vite"
+      "stack": [
+        {
+          "label": "Backend",
+          "items": [
+            "FastAPI",
+            "Python 3.13",
+            "Uvicorn"
+          ]
+        },
+        {
+          "label": "Base de données",
+          "items": [
+            "PostgreSQL",
+            "SQLAlchemy 2",
+            "Alembic"
+          ]
+        },
+        {
+          "label": "Authentification",
+          "items": [
+            "JWT Auth",
+            "OAuth GitHub",
+            "Fernet"
+          ]
+        },
+        {
+          "label": "Recherche vectorielle",
+          "items": [
+            "ChromaDB",
+            "sentence-transformers",
+            "LangChain"
+          ]
+        },
+        {
+          "label": "IA",
+          "items": [
+            "OpenAI"
+          ]
+        },
+        {
+          "label": "Analyse de code",
+          "items": [
+            "Ruff",
+            "ESLint"
+          ]
+        },
+        {
+          "label": "Frontend",
+          "items": [
+            "React 19",
+            "Vite",
+            "React Router 7"
+          ]
+        },
+        {
+          "label": "Export",
+          "items": [
+            "ReportLab"
+          ]
+        }
       ],
       "link": "https://commitclarify.vercel.app",
       "action": "Voir l'application",
+      "private": true,
       "shots": [
         {
           "src": "/assets/screenshots/commitclarify/report.webp",

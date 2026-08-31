@@ -8,7 +8,24 @@
       "accent": "#4f8ef7",
       "year": "2026",
       "status": "Live",
-      "description": "One question only: what am I paying for, and what is about to be charged? Due dates are materialised rows written ahead of time by a daily job, not a calculation redone on every read that nobody can audit.",
+      "features": [
+        {
+          "title": "Subscriptions and bills",
+          "text": "Two kinds of commitment, one way to track them: category, cadence, reminder lead time, and the amount both per charge and per year."
+        },
+        {
+          "title": "Calendar of instalments",
+          "text": "Every due date is a row written to the database ahead of time. One click marks it paid. On a phone the grid keeps its seven columns and switches to dots."
+        },
+        {
+          "title": "Spending breakdown",
+          "text": "Every category, not just the top five, and the heaviest lines ranked per year as well as per month."
+        },
+        {
+          "title": "Multi-channel reminders",
+          "text": "Before the due date, past due, trial ending: three families of alert, each switchable on its own, over email and web push, plus a Monday digest."
+        }
+      ],
       "metrics": [
         {
           "value": "1,047",
@@ -26,26 +43,72 @@
       "highlights": [
         "Email and web push reminders, each one keyed so it goes out exactly once",
         "Migrations run at startup, serialised across replicas by an advisory lock",
-        "Errors are a contract: the client switches on a code, never on the message",
-        "Soft delete purged after 30 days, guarded through two single helpers"
+        "Errors are a contract: the client switches on a code, never on the message"
       ],
-      "technologies": [
-        "FastAPI",
-        "PostgreSQL",
-        "SQLAlchemy 2",
-        "Alembic",
-        "Redis",
-        "Cloudflare R2",
-        "S3 API",
-        "boto3",
-        "React 19",
-        "Vite 8",
-        "CSS Modules",
-        "Web Push",
-        "Resend"
+      "stack": [
+        {
+          "label": "Backend",
+          "items": [
+            "FastAPI",
+            "Python 3.13",
+            "SQLAlchemy 2",
+            "Alembic",
+            "Pydantic 2"
+          ]
+        },
+        {
+          "label": "Database",
+          "items": [
+            "PostgreSQL",
+            "asyncpg",
+            "Redis"
+          ]
+        },
+        {
+          "label": "Authentication",
+          "items": [
+            "JWT Auth",
+            "Google OAuth",
+            "argon2"
+          ]
+        },
+        {
+          "label": "Storage",
+          "items": [
+            "Cloudflare R2",
+            "S3 API",
+            "boto3",
+            "Pillow"
+          ]
+        },
+        {
+          "label": "Frontend",
+          "items": [
+            "React 19",
+            "Vite 8",
+            "React Router 7",
+            "CSS Modules"
+          ]
+        },
+        {
+          "label": "Notifications",
+          "items": [
+            "Web Push",
+            "py-vapid",
+            "Resend"
+          ]
+        },
+        {
+          "label": "Testing",
+          "items": [
+            "pytest",
+            "Vitest"
+          ]
+        }
       ],
       "link": "https://oubliepas.com/",
       "action": "Visit the site",
+      "private": true,
       "shots": [
         {
           "src": "/assets/screenshots/oubliepas/Dashboard.webp",
@@ -85,7 +148,24 @@
       "accent": "#1aa392",
       "year": "2026",
       "status": "Play Store",
-      "description": "A mobile app that builds a skill-growth roadmap from a resume, simulates interviews and tracks applications. Three independent applications: the API, the mobile client and an admin panel.",
+      "features": [
+        {
+          "title": "Roadmap built from a resume",
+          "text": "The resume is parsed, skills are extracted, and a skill-growth roadmap is built phase by phase with its own progress tracking."
+        },
+        {
+          "title": "Coach and interview simulator",
+          "text": "An assistant reviews the resume and runs mock interviews. Answers stream in word by word."
+        },
+        {
+          "title": "Application tracking",
+          "text": "Every application keeps its status, from sent to answered, with the interviews attached to it."
+        },
+        {
+          "title": "Admin console",
+          "text": "A separate React panel: statistics, account management, audit log, Sentry errors and the actual OpenAI cost."
+        }
+      ],
       "metrics": [
         {
           "value": "3",
@@ -103,27 +183,77 @@
       "highlights": [
         "API versioned under /v1, client and admin routers strictly separated",
         "Roles resolved from the database on every request, never read from the JWT",
-        "Every AI answer streams in as text rather than sitting behind a spinner",
-        "Separate React admin panel, showing the actual OpenAI cost"
+        "24 h access, 30 day refresh with rotation, passwords hashed with argon2"
       ],
-      "technologies": [
-        "Flutter",
-        "Riverpod 3",
-        "FastAPI",
-        "PostgreSQL",
-        "SQLAlchemy 2",
-        "OpenAI",
-        "Cloudflare R2",
-        "S3 API",
-        "boto3",
-        "JWT",
-        "OAuth 2.0",
-        "spaCy",
-        "Sentry",
-        "React 19"
+      "stack": [
+        {
+          "label": "Mobile",
+          "items": [
+            "Flutter",
+            "Riverpod 3",
+            "Dio",
+            "go_router"
+          ]
+        },
+        {
+          "label": "Backend",
+          "items": [
+            "FastAPI",
+            "Python 3.13",
+            "SQLAlchemy 2",
+            "Alembic"
+          ]
+        },
+        {
+          "label": "Database",
+          "items": [
+            "PostgreSQL",
+            "asyncpg"
+          ]
+        },
+        {
+          "label": "Authentication",
+          "items": [
+            "JWT Auth",
+            "LinkedIn OAuth",
+            "argon2"
+          ]
+        },
+        {
+          "label": "Storage",
+          "items": [
+            "Cloudflare R2",
+            "S3 API",
+            "boto3"
+          ]
+        },
+        {
+          "label": "AI",
+          "items": [
+            "OpenAI",
+            "spaCy",
+            "PyMuPDF"
+          ]
+        },
+        {
+          "label": "Admin panel",
+          "items": [
+            "React 19",
+            "Vite",
+            "Recharts"
+          ]
+        },
+        {
+          "label": "Monitoring",
+          "items": [
+            "Sentry",
+            "APScheduler"
+          ]
+        }
       ],
       "link": "https://play.google.com/store/apps/details?id=com.joblyx.app&pcampaignid=web_share",
       "action": "View on the Play Store",
+      "private": true,
       "shots": [
         {
           "src": "/assets/screenshots/joblyx/Dashboard.webp",
@@ -163,7 +293,24 @@
       "accent": "#d08a45",
       "year": "2026",
       "status": "Live",
-      "description": "Four agents run against a repository in parallel: exposed secrets, .gitignore, code quality, README checked against the actual code. The linters provide what is deterministic and reproducible; the LLM only handles what static tooling cannot see.",
+      "features": [
+        {
+          "title": "Four agents in parallel",
+          "text": "Exposed secrets, .gitignore, code quality, README checked against the actual code: four analyses launched together on one repository."
+        },
+        {
+          "title": "Deterministic first",
+          "text": "Ruff, ESLint and the filename scan produce reproducible findings. The LLM only handles what they cannot see."
+        },
+        {
+          "title": "Live analysis progress",
+          "text": "An SSE stream shows the real state of the run: fetching, indexing, analyzing, done."
+        },
+        {
+          "title": "Exportable report",
+          "text": "Every report reads inside the app and exports to PDF or JSON, in French as well as English."
+        }
+      ],
       "metrics": [
         {
           "value": "137",
@@ -181,24 +328,72 @@
       "highlights": [
         "Embeddings computed locally: no code is ever sent to a third-party service",
         "Chroma index keyed by user, repository and SHA: an unchanged repo reuses its index",
-        "GitHub OAuth through a single-use code rather than JWTs in the URL, token Fernet-encrypted",
-        "Ruff and ESLint run for real against deliberately broken code in the tests, no mocks"
+        "GitHub OAuth through a single-use code rather than JWTs in the URL, token Fernet-encrypted"
       ],
-      "technologies": [
-        "FastAPI",
-        "PostgreSQL",
-        "ChromaDB",
-        "LangChain",
-        "sentence-transformers",
-        "OpenAI",
-        "Ruff",
-        "ESLint",
-        "ReportLab",
-        "React 19",
-        "Vite"
+      "stack": [
+        {
+          "label": "Backend",
+          "items": [
+            "FastAPI",
+            "Python 3.13",
+            "Uvicorn"
+          ]
+        },
+        {
+          "label": "Database",
+          "items": [
+            "PostgreSQL",
+            "SQLAlchemy 2",
+            "Alembic"
+          ]
+        },
+        {
+          "label": "Authentication",
+          "items": [
+            "JWT Auth",
+            "GitHub OAuth",
+            "Fernet"
+          ]
+        },
+        {
+          "label": "Vector search",
+          "items": [
+            "ChromaDB",
+            "sentence-transformers",
+            "LangChain"
+          ]
+        },
+        {
+          "label": "AI",
+          "items": [
+            "OpenAI"
+          ]
+        },
+        {
+          "label": "Code analysis",
+          "items": [
+            "Ruff",
+            "ESLint"
+          ]
+        },
+        {
+          "label": "Frontend",
+          "items": [
+            "React 19",
+            "Vite",
+            "React Router 7"
+          ]
+        },
+        {
+          "label": "Export",
+          "items": [
+            "ReportLab"
+          ]
+        }
       ],
       "link": "https://commitclarify.vercel.app",
       "action": "Open the app",
+      "private": true,
       "shots": [
         {
           "src": "/assets/screenshots/commitclarify/report.webp",

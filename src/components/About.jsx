@@ -39,16 +39,16 @@ export default function About() {
 
       <div className="about-stats">
         <div className="about-stat">
-          <span className="about-stat-number">+1</span>
-          <span className="about-stat-label">{t.stat_experience}</span>
+          <span className="about-stat-number">{t.stats.experience.value}</span>
+          <span className="about-stat-label">{t.stats.experience.label}</span>
         </div>
         <div className="about-stat">
-          <span className="about-stat-number">+{projects.length}</span>
-          <span className="about-stat-label">{t.stat_projects}</span>
+          <span className="about-stat-number">{projects.length}</span>
+          <span className="about-stat-label">{t.stats.projects.label}</span>
         </div>
         <div className="about-stat">
-          <span className="about-stat-number">+15</span>
-          <span className="about-stat-label">{t.stat_techs}</span>
+          <span className="about-stat-number">{t.stats.techs.value}</span>
+          <span className="about-stat-label">{t.stats.techs.label}</span>
         </div>
       </div>
     </section>

@@ -92,7 +92,21 @@ function ProjectCase({ project, index, ui }) {
 
         <h3 className="case-title">{project.title}</h3>
         <p className="case-tagline">{project.tagline}</p>
-        <p className="case-desc">{project.description}</p>
+
+        <div className="case-block">
+          <h4 className="case-block-title">{ui.projects.features}</h4>
+          <ul className="case-features">
+            {project.features.map((f, fi) => (
+              <li key={f.title} className="case-feature">
+                <span className="case-feature-num">
+                  {String(fi + 1).padStart(2, "0")}
+                </span>
+                <h5 className="case-feature-title">{f.title}</h5>
+                <p className="case-feature-text">{f.text}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <ul className="case-metrics">
           {project.metrics.map((m) => (
@@ -114,11 +128,18 @@ function ProjectCase({ project, index, ui }) {
 
         <div className="case-block">
           <h4 className="case-block-title">{ui.projects.stack}</h4>
-          <div className="case-techs">
-            {project.technologies.map((t) => (
-              <span key={t} className="chip">{t}</span>
+          <dl className="case-stack">
+            {project.stack.map((g) => (
+              <div key={g.label} className="case-stack-row">
+                <dt className="case-stack-label">{g.label}</dt>
+                <dd className="case-stack-items">
+                  {g.items.map((t) => (
+                    <span key={t} className="chip">{t}</span>
+                  ))}
+                </dd>
+              </div>
             ))}
-          </div>
+          </dl>
         </div>
 
         <a
@@ -132,6 +153,19 @@ function ProjectCase({ project, index, ui }) {
             <path d="M7 17L17 7M17 7H7M17 7v10" />
           </svg>
         </a>
+
+        {project.private && (
+          <p className="case-private">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+              <rect x="4" y="10.5" width="16" height="10" rx="2" />
+              <path d="M8 10.5V7a4 4 0 0 1 8 0v3.5" />
+            </svg>
+            <span>
+              {ui.projects.private}{" "}
+              <a href="#contact">{ui.projects.private_cta}</a>
+            </span>
+          </p>
+        )}
       </div>
 
       <div className="case-visual">

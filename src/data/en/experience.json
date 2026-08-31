@@ -1,42 +1,95 @@
 {
-    "experiences": [
-        {
-            "company": "Innovations et Solutions Technologiques Inc",
-            "position": "Full Stack Developer Intern",
-            "duration": "03/2025 - 06/2025",
-            "location": "Montreal, QC",
-            "description": [
-                "Full stack development of web applications.",
-                "Implementation of unit tests and comprehensive documentation.",
-                "Participation in code reviews, performance optimization, and UX improvements.",
-                "Team collaboration on various software projects using agile methodologies to ensure efficient and quality delivery."
-            ],
-            "technologies": ["Angular", "Node.js", "MS SQL Server", "React", "Express.js", "FastAPI", "Flask", "MongoDB", "Jira", "Kanban"]
-        },
-        {
-            "company": "SGMC - CASTEL Group Subsidiary",
-            "position": "IT Technician",
-            "duration": "05/2020 - 05/2021",
-            "location": "Douala, Littoral",
-            "description": [
-                "Development support and maintenance of enterprise IT systems.",
-                "Diagnosis, analysis, and resolution of technical issues.",
-                "Automation of internal processes to improve reliability and performance.",
-                "Collaboration with multidisciplinary teams on various projects."
-            ],
-            "technologies": ["C#", "Python", "C++"]
-        },
-        {
-            "company": "COCIC SARL",
-            "position": "IT Department Intern",
-            "duration": "12/2019 - 03/2020",
-            "location": "Douala, Littoral",
-            "description": [
-                "Data analysis and visualization.",
-                "Development of Python scripts to automate internal tasks.",
-                "Participation in maintenance and improvement of software tools."
-            ],
-            "technologies": ["Excel", "Python", "Google Sheets"]
-        }
-    ]
+  "experiences": [
+    {
+      "position": "Independent full stack developer",
+      "company": "Joblyx · OubliePas · CommitClarify",
+      "duration": "07/2025 - present",
+      "location": "Canada, remote",
+      "current": true,
+      "description": [
+        "Designed, built and shipped 3 complete applications (web and mobile) to production, from idea to launch, entirely on my own",
+        "Published Joblyx on Google Play, an AI career assistant (Flutter + FastAPI) with a career roadmap, resume coach and interview simulator powered by OpenAI, answers rendered as they stream (SSE)",
+        "Built a RAG pipeline (ChromaDB, local embeddings, LangChain) and 4 analysis agents combining linters and an LLM to audit GitHub repositories automatically (CommitClarify)",
+        "Developed OubliePas, a bilingual subscription-tracking PWA (React 19 + FastAPI) with email reminders and web push notifications, covered by 1,396 automated tests",
+        "Secured authentication with JWT token rotation, OAuth (LinkedIn, GitHub, Google) and role management, with Sentry monitoring in production",
+        "Automated database migrations at startup (Alembic) and deployed on Railway/Vercel with Docker, PostgreSQL and Redis"
+      ],
+      "technologies": [
+        "Flutter",
+        "FastAPI",
+        "React 19",
+        "PostgreSQL",
+        "Redis",
+        "OpenAI",
+        "LangChain",
+        "ChromaDB",
+        "Alembic",
+        "Docker",
+        "JWT",
+        "OAuth 2.0",
+        "Sentry"
+      ]
+    },
+    {
+      "position": "Full stack developer intern",
+      "company": "Innovations et Solutions Technologiques Inc",
+      "duration": "03/2025 - 06/2025",
+      "location": "Montreal, Quebec",
+      "description": [
+        "Built end-to-end full stack features (FastAPI/Flask + React), shipped to production",
+        "Integrated AWS S3 cloud storage (boto3) for secure handling of user files",
+        "Automated tests and deployments through a GitHub Actions CI/CD pipeline, removing manual deployments",
+        "Set up unit tests to reduce regressions in production",
+        "Took part in code reviews (pull requests) within an agile team, contributing to more reliable releases"
+      ],
+      "technologies": [
+        "FastAPI",
+        "Flask",
+        "React",
+        "Angular",
+        "Node.js",
+        "Express.js",
+        "MS SQL Server",
+        "MongoDB",
+        "AWS S3",
+        "boto3",
+        "GitHub Actions",
+        "Jira"
+      ]
+    },
+    {
+      "position": "IT technician",
+      "company": "SGMC, a Castel group subsidiary",
+      "duration": "05/2020 - 05/2021",
+      "location": "Douala, Cameroon",
+      "description": [
+        "Automated internal processes with Python scripts, cutting manual work and human error",
+        "Diagnosed and resolved technical incidents in a production environment",
+        "Handled support and maintenance of the company's IT equipment"
+      ],
+      "technologies": [
+        "Python",
+        "C#",
+        "C++"
+      ]
+    },
+    {
+      "position": "IT department intern",
+      "company": "COCIC SARL",
+      "duration": "12/2019 - 03/2020",
+      "location": "Douala, Cameroon",
+      "description": [
+        "Developed Python scripts automating repetitive tasks, making internal processes more reliable",
+        "Analysed and visualised data with Pandas/Numpy to support decision-making",
+        "Contributed to the maintenance and evolution of internal software tools"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Numpy",
+        "Excel",
+        "Google Sheets"
+      ]
+    }
+  ]
 }

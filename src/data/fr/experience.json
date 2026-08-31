@@ -1,42 +1,95 @@
 {
-    "experiences": [
-        {
-            "company": "Innovations et Solutions Technologiques Inc",
-            "position": "Développeur Full Stack stagiaire",
-            "duration": "03/2025 -  06/2025",
-            "location": "Montréal, QC",
-            "description": [
-                "Développement full stack d'applications web.",
-                "Mise en place des tests unitaires et documentation complète.",
-                "Participation à la revue de code, optimisation des performances et amélioration de l'ergonomie.",
-                "Collaboration en équipe sur divers projets logiciels, en utilisant des méthodologies agiles pour assurer une livraison efficace et de qualité."
-            ],
-            "technologies": ["Angular", "Node.js", "MS SQL Server", "React", "Express.js", "FastAPI", "Flask", "MongoDB", "Jira", "Kanban"]
-        },
-        {
-            "company": "SGMC-filiale du groupe CASTEL",
-            "position": "Technicien en Informatique",
-            "duration": "05/2020 - 05/2021",
-            "location": "Douala, Littoral",
-            "description": [
-                "Support au développement et à la maintenance des systèmes informatiques de l'entreprise.",
-                "Diagnostic, analyse et résolution des anomalies techniques",
-                "Automatisation des processus internes pour améliorer la fiabilité et la performance",
-                "Collaboration en équipe pluridisciplinaire sur divers projets"
-            ],
-            "technologies": ["C#", "Python", "C++"]
-        },
-        {
-            "company": "COCIC SARL",
-            "position": "Stagiaire au service informatique",
-            "duration": "12/2019 - 03/2020",
-            "location": "Douala, Littoral",
-            "description": [
-                "Analyse et visulation des données",
-                "Développement de scripts Python pour automatiser les tâches internes",
-                "Participation à la maintenance et à l'évolution des outils logiciels"
-            ],
-            "technologies": ["Excel", "Python", "Google Sheets"]
-        }
-    ]
+  "experiences": [
+    {
+      "position": "Développeur full stack indépendant",
+      "company": "Joblyx · OubliePas · CommitClarify",
+      "duration": "07/2025 - aujourd'hui",
+      "location": "Canada, à distance",
+      "current": true,
+      "description": [
+        "Conçu, développé et déployé en production 3 applications complètes (web et mobile), de l'idée au lancement, en autonomie totale",
+        "Publié Joblyx sur Google Play, assistant de carrière IA (Flutter + FastAPI) avec roadmap de carrière, coach CV et simulateur d'entrevue propulsés par OpenAI, réponses affichées en streaming (SSE)",
+        "Construit un pipeline RAG (ChromaDB, embeddings locaux, LangChain) et 4 agents d'analyse combinant linters et LLM pour auditer automatiquement des dépôts GitHub (CommitClarify)",
+        "Développé OubliePas, PWA bilingue de suivi d'abonnements (React 19 + FastAPI) avec rappels par email et notifications web push, couverte par 1 396 tests automatisés",
+        "Sécurisé les authentifications avec JWT à rotation de tokens, OAuth (LinkedIn, GitHub, Google) et gestion des rôles, avec monitoring Sentry en production",
+        "Automatisé les migrations de base de données au démarrage (Alembic) et déployé sur Railway/Vercel avec Docker, PostgreSQL et Redis"
+      ],
+      "technologies": [
+        "Flutter",
+        "FastAPI",
+        "React 19",
+        "PostgreSQL",
+        "Redis",
+        "OpenAI",
+        "LangChain",
+        "ChromaDB",
+        "Alembic",
+        "Docker",
+        "JWT",
+        "OAuth 2.0",
+        "Sentry"
+      ]
+    },
+    {
+      "position": "Développeur full stack stagiaire",
+      "company": "Innovations et Solutions Technologiques Inc",
+      "duration": "03/2025 - 06/2025",
+      "location": "Montréal, Québec",
+      "description": [
+        "Développé des fonctionnalités full stack de bout en bout (FastAPI/Flask + React), livrées en production",
+        "Intégré le stockage cloud AWS S3 (boto3) pour la gestion sécurisée des fichiers utilisateurs",
+        "Automatisé les tests et déploiements via un pipeline CI/CD GitHub Actions, éliminant les déploiements manuels",
+        "Mis en place les tests unitaires pour réduire les régressions en production",
+        "Participé aux revues de code (pull requests) en équipe agile, contribuant à des livraisons plus fiables"
+      ],
+      "technologies": [
+        "FastAPI",
+        "Flask",
+        "React",
+        "Angular",
+        "Node.js",
+        "Express.js",
+        "MS SQL Server",
+        "MongoDB",
+        "AWS S3",
+        "boto3",
+        "GitHub Actions",
+        "Jira"
+      ]
+    },
+    {
+      "position": "Technicien informatique",
+      "company": "SGMC, filiale du groupe Castel",
+      "duration": "05/2020 - 05/2021",
+      "location": "Douala, Cameroun",
+      "description": [
+        "Automatisé des processus internes via scripts Python, réduisant le travail manuel et les erreurs humaines",
+        "Diagnostiqué et résolu les incidents techniques en environnement de production",
+        "Assuré le support et la maintenance du parc informatique de l'entreprise"
+      ],
+      "technologies": [
+        "Python",
+        "C#",
+        "C++"
+      ]
+    },
+    {
+      "position": "Stagiaire au service informatique",
+      "company": "COCIC SARL",
+      "duration": "12/2019 - 03/2020",
+      "location": "Douala, Cameroun",
+      "description": [
+        "Développé des scripts Python automatisant des tâches répétitives, fiabilisant les processus internes",
+        "Analysé et visualisé les données avec Pandas/Numpy pour appuyer la prise de décision",
+        "Participé à la maintenance et à l'évolution des outils logiciels internes"
+      ],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Numpy",
+        "Excel",
+        "Google Sheets"
+      ]
+    }
+  ]
 }
