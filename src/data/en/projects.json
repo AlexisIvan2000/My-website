@@ -108,7 +108,7 @@
       ],
       "link": "https://oubliepas.com/",
       "action": "Visit the site",
-      "private": true,
+      "repo": "https://github.com/AlexisIvan2000/OubliePas",
       "shots": [
         {
           "src": "/assets/screenshots/oubliepas/Dashboard.webp",
@@ -133,6 +133,11 @@
         {
           "src": "/assets/screenshots/oubliepas/Reminders.webp",
           "label": "Reminders"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/notifications.webp",
+          "label": "Push notification",
+          "fit": "contain"
         },
         {
           "src": "/assets/screenshots/oubliepas/reminders_email.webp",
@@ -183,7 +188,7 @@
       "highlights": [
         "API versioned under /v1, client and admin routers strictly separated",
         "Roles resolved from the database on every request, never read from the JWT",
-        "24 h access, 30 day refresh with rotation, passwords hashed with argon2"
+        "60 min access, 30 day refresh with rotation, passwords hashed with argon2"
       ],
       "stack": [
         {
@@ -393,7 +398,7 @@
       ],
       "link": "https://commitclarify.vercel.app",
       "action": "Open the app",
-      "private": true,
+      "repo": "https://github.com/AlexisIvan2000/Commitclarify",
       "shots": [
         {
           "src": "/assets/screenshots/commitclarify/report.webp",

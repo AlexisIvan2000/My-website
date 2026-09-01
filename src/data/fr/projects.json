@@ -108,7 +108,7 @@
       ],
       "link": "https://oubliepas.com/",
       "action": "Voir le site",
-      "private": true,
+      "repo": "https://github.com/AlexisIvan2000/OubliePas",
       "shots": [
         {
           "src": "/assets/screenshots/oubliepas/Dashboard.webp",
@@ -133,6 +133,11 @@
         {
           "src": "/assets/screenshots/oubliepas/Reminders.webp",
           "label": "Rappels"
+        },
+        {
+          "src": "/assets/screenshots/oubliepas/notifications.webp",
+          "label": "Notification push",
+          "fit": "contain"
         },
         {
           "src": "/assets/screenshots/oubliepas/reminders_email.webp",
@@ -183,7 +188,7 @@
       "highlights": [
         "API versionnée sous /v1, routers client et admin strictement séparés",
         "Rôles résolus en base à chaque requête, jamais lus depuis le JWT",
-        "Accès de 24 h, rafraîchissement de 30 jours avec rotation, mots de passe hachés en argon2"
+        "Accès de 60 min, rafraîchissement de 30 jours avec rotation, mots de passe hachés en argon2"
       ],
       "stack": [
         {
@@ -393,7 +398,7 @@
       ],
       "link": "https://commitclarify.vercel.app",
       "action": "Voir l'application",
-      "private": true,
+      "repo": "https://github.com/AlexisIvan2000/Commitclarify",
       "shots": [
         {
           "src": "/assets/screenshots/commitclarify/report.webp",

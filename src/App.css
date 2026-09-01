@@ -1533,13 +1533,19 @@ section {
   transform: translateY(-2px);
 }
 
-/* Bouton */
+/* Boutons */
+
+.case-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
 
 .case-cta {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 32px;
   padding: 13px 26px;
   border-radius: 999px;
   border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
@@ -1560,6 +1566,23 @@ section {
 
 .case-cta svg { transition: transform 0.3s; }
 .case-cta:hover svg { transform: translate(3px, -3px); }
+
+/* Bouton secondaire : le dépôt reste en retrait derrière l'app en ligne */
+.case-cta--ghost {
+  border-color: var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+.case-cta--ghost:hover {
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  box-shadow: none;
+  color: var(--text-bright);
+}
+
+/* Le logo n'est pas une flèche : il ne part pas en diagonale au survol */
+.case-cta--ghost:hover svg { transform: none; }
 
 /* Code non public : on le dit, et on donne la porte d'entrée */
 .case-private {
@@ -1766,6 +1789,14 @@ section {
 
 .case[data-type="mobile"] .case-shot { object-fit: contain; }
 
+/* Capture verticale dans un cadre paysage : la recadrer n'en montrerait que
+   la barre d'état. On la pose entière, centrée, sur le fond du cadre. */
+.case-shot--contain {
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg);
+}
+
 /* Reflet de lumière qui balaie la capture */
 .case-sheen {
   position: absolute;
@@ -1905,6 +1936,7 @@ section {
   .case-tab { padding: 6px 11px; font-size: 11px; }
   .case-chrome { padding: 9px 12px; }
   .case-chrome-url { font-size: 10px; }
+  .case-actions { flex-direction: column; align-items: stretch; }
   .case-cta { width: 100%; justify-content: center; }
   .case-reflection { display: none; }
 }
